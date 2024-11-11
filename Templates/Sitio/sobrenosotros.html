@@ -1,0 +1,155 @@
+{% include 'sitio/cabecera.html' %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Profesional</title>
+    <style>
+        /* Reset general */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Estilo general */
+        body {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #222;
+        }
+
+        p {
+            text-align: center;
+            max-width: 600px;
+            margin: 10px auto;
+            color: #555;
+        }
+
+        /* Sección Hero */
+        .hero-section {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: url('/imagenes/fondo2.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero-section h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        .hero-section p {
+            font-size: 1.2em;
+            max-width: 800px;
+        }
+
+        /* Sección "Sobre Nosotros" */
+        .about-section {
+            padding: 60px 20px;
+            background-color: #f5f5f5;
+        }
+
+        /* Sección del equipo */
+        .team-section {
+            padding: 60px 20px;
+            background-color: #fff;
+        }
+
+        .team-members {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .team-member {
+            background-color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            margin-bottom: 15px;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        .team-member h3 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        .team-member p {
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sección Hero -->
+    <div class="hero-section" id="home">
+        <h1>Soluciones Innovadoras para tu Negocio</h1>
+        <p>Nos dedicamos a transformar ideas en realidades</p>
+    </div>
+
+    <!-- Sección Sobre Nosotros -->
+    <div class="about-section" id="about">
+        <h1>Sobre Nosotros</h1>
+        <p>Somos una empresa dedicada a ofrecer soluciones innovadoras para mejorar la vida de nuestros clientes. Nuestro equipo está compuesto por profesionales apasionados y comprometidos con la excelencia.</p>
+    </div>
+
+    <!-- Sección del equipo -->
+    <div class="team-section" id="team">
+        <h2>Conoce a Nuestro Equipo</h2>
+        <div class="team-members">
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100" alt="Nombre del Miembro">
+                <h3>Juan Pérez</h3>
+                <p>CEO y Fundador</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100" alt="Nombre del Miembro">
+                <h3>María García</h3>
+                <p>Directora de Marketing</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/100" alt="Nombre del Miembro">
+                <h3>Carlos López</h3>
+                <p>Jefe de Tecnología</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
+{% include 'sitio/pie.html' %}

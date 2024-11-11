@@ -1,0 +1,108 @@
+{% include 'sitio/cabecera.html' %}
+
+<style>
+  body {
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0px;
+      background-color: #333;
+  }
+
+  .container {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        max-width: 400px;
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #333;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        color: #333;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    input[type="text"]:focus,
+    input[type="tel"]:focus,
+    input[type="email"]:focus,
+    textarea:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+</style>
+
+<div class="container">
+    <h2>Contáctanos</h2>
+    <form action="procesar_formulario" method="post">
+        <div class="form-group">
+            <label for="nombre">Nombre/Empresa:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </div>
+        <div class="form-group">
+            <label for="ciudad">Ciudad:</label>
+            <input type="text" id="ciudad" name="ciudad" required>
+        </div>
+        <div class="form-group">
+            <label for="correo">Correo:</label>
+            <input type="email" id="correo" name="correo" required>
+        </div>
+        <div class="form-group">
+            <label for="mensaje">¿Por qué nos contacta?</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        </div>
+            <button type="submit">Enviar</button>
+    </form>
+</div>
+
+
+

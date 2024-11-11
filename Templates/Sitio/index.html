@@ -1,0 +1,165 @@
+{% include 'sitio/cabecera.html' %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación Profesional de la Página Web</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #333;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .about, .services, .contact {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .about img {
+            width: 80%;
+            max-width: 600px;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .services h2, .contact h2 {
+            margin-bottom: 20px;
+            color: #4A90E2;
+        }
+
+        .service-card {
+            display: inline-block;
+            width: 30%;
+            margin: 15px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .service-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .service-card h3 {
+            margin: 15px 0;
+        }
+
+        .service-card p {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .contact-button {
+            display: inline-block;
+            background-color: #4A90E2;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .contact-button:hover {
+            background-color: #357ABD;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Bienvenidos a Construcciones W & M</h1>
+            <p>Transformamos ideas en soluciones digitales.</p>
+        </div>
+    </header>
+    <section class="services">
+        <h2>Nuestros Servicios</h2>
+        <div class="service-card">
+            <img src="/imagenes/fondo2.jpg" alt="Desarrollo de Software">
+            <h3>Desarrollo de Software</h3>
+            <p>Desarrollamos aplicaciones web y móviles adaptadas a los objetivos específicos de cada cliente.</p>
+        </div>
+        <div class="service-card">
+            <img src="images/diseno.jpg" alt="Diseño Web">
+            <h3>Diseño Web</h3>
+            <p>Creación de páginas web estéticamente atractivas y altamente funcionales para mejorar la presencia online.</p>
+        </div>
+        <div class="service-card">
+            <img src="images/consultoria.jpg" alt="Consultoría Técnica">
+            <h3>Consultoría Técnica</h3>
+            <p>Brindamos asesoría profesional en soluciones tecnológicas para optimizar tus procesos.</p>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Contáctanos</h2>
+        <p>¿Listo para dar el siguiente paso? Contáctanos y descubre cómo podemos ayudarte a transformar tu negocio.</p>
+        <a href="/formulario" class="contact-button">Contáctanos</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Construcciones W&M. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+{% include 'sitio/pie.html' %}
+
+
+
+
+    
+
